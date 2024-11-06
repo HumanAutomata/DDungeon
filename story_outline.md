@@ -1,4 +1,8 @@
 # Notes
+- ideas
+    - God's are trying to determine if humans are intrinsicly good or bad
+    - undertale style
+        - pacifict, mix, kill-everything run
 - admins on every floor
     - a final boss
     - defeating them does not necessarily mean fighting them
