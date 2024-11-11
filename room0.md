@@ -1,6 +1,4 @@
 # Room0
-
-- wake up on a bed
 - don't remember anything
 - list of words: dark, dingy, damp, cramped
 - find a note with some information:
@@ -22,13 +20,8 @@ Sincerely,
 The Administators
 ```
 
-## Choices
-
-### Good
-- 
-
-### Neutral
-- do nothing
+## choices
+1. do nothing:
 - you get prompted to act by some voices
     - maybe you see visions
     - the chest starts to look more enticing to you
@@ -36,4 +29,33 @@ The Administators
 - you run out of food and die
 - or a more "epic" death - ceiling collapses, lava floods the room
 
-### Bad
+2. Examine the chest
+Examining the chest you find the following items:
+
+### Items
+1. **sword**
+    - the fighting / bad choice
+    - face more monsters / monsters attack you
+    - npcs will like you less, but some might like you more
+2. **amulet**
+    - the "good choice"
+    - it has a picture of a little elf girl
+    - words: cute, old, homemade, tattered
+    - later find out it belongs to the floor guardian
+3. **key**
+    - will let the player get some extra item later / travel between room1 and room2
+    - fancy, heavy, ancient
+
+As soon as the player picks an item, the chest dissapears
+- sinks into the floor, teleports, flash of light and its gone
+
+Then you hear rumbling and some dust falls onto your shoulders
+You don't feel safe
+
+## Choice
+
+1. Stay - game over
+2. Go to the next room
+
+
+[transition0](transition0.md)

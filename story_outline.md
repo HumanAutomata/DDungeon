@@ -15,13 +15,9 @@
 ## Themes
 - Mystery, Exploration
 
-# Beginning
+# Rooms
 - Wake up at the bottom floor
 [room0](room0.md)
 
-# Middle
-
-# End
-
-# Rooms
+# Notes
 
