@@ -43,7 +43,7 @@ Examining the chest you find the following items:
     - words: cute, old, homemade, tattered
     - later find out it belongs to the floor guardian
 3. **key**
-    - will let the player get some extra item later / travel between room1 and room2
+    - will let the player get some extra item later
     - fancy, heavy, ancient
 
 As soon as the player picks an item, the chest dissapears

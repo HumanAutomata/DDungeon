@@ -18,6 +18,13 @@
 # Rooms
 - Wake up at the bottom floor
 [room0](room0.md)
+[room1](room1.md)
+[room2](room2.md)
+[room3](room3.md)
+
+# Transitions
+[transition0](transition0.md)
+[transition1](transition1.md)
 
 # Notes
 
