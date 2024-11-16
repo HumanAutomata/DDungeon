@@ -1,18 +1,24 @@
 # Room3
 
-A throne room, elf / nature themed
+> A throne room, elf / nature themed
+> an statue of an elf king is sitting on the throne
 
-an elf king is sitting on the throne
+> [!NOTE]
+> to make it here, you either chose the amulet or the key
 
-to make it here, you either chose the amulet or the key
+You see the exit behind the throne
 
-## if amulet
+# if amulet
+1. make a run for it - you fail - GG
+2. approach the elf
 
-you get a backstory of the elf - the amulet was his daughter's
+> you get a backstory of the elf - the amulet was his daughter's
 
 Then you get a free passage
 
-## if key
+# if key
+
+1. make a run for it - although you are really fast due to the potion, you fail - GG
 
 the elf will give you a choice of 3 chests
 - two of them will match the chests you saw before

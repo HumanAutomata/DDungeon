@@ -26,8 +26,8 @@ Before you can act, you notice a crack appear on the wall
 
 ---
 As you keep walking you come across an intersection with two doors
-words for room1: earthy smell, sturdy door
-words for room2: fresh smell, grass, honey
+> words for room1: earthy smell, sturdy door
+> words for room2: fresh smell, grass, honey
 
 ## Choice
 go to [room1](room1.md) or [room2](room2.md)

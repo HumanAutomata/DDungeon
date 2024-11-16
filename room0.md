@@ -1,8 +1,13 @@
 # Room0
-- don't remember anything
-- list of words: dark, dingy, damp, cramped
-- find a note with some information:
+---
 
+- don't remember anything
+
+
+> list of words: dark, dingy, damp, cramped
+
+
+- find a note with some information:
 ```
 Hello %^%%$&#,
 You have been given a great opportunity.
@@ -19,20 +24,29 @@ Good luck!
 Sincerely,
 The Administators
 ```
+You look over and see a chest at foot of the bed
+
+## choose a companion
+> todo later
+
+
+`Prompt the player to examine the chest`
 
 ## choices
+---
 1. do nothing:
-- you get prompted to act by some voices
-    - maybe you see visions
-    - the chest starts to look more enticing to you
+
+> I highly reccomend you look at the chest
+
+
 - but you keep ignoring it
-- you run out of food and die
-- or a more "epic" death - ceiling collapses, lava floods the room
+- theatrical death - ceiling collapses, lava floods the room
 
 2. Examine the chest
 Examining the chest you find the following items:
 
 ### Items
+---
 1. **sword**
     - the fighting / bad choice
     - face more monsters / monsters attack you
@@ -50,10 +64,11 @@ As soon as the player picks an item, the chest dissapears
 - sinks into the floor, teleports, flash of light and its gone
 
 Then you hear rumbling and some dust falls onto your shoulders
-You don't feel safe
+
+> You should probably hurry up
 
 ## Choice
-
+---
 1. Stay - game over
 2. Go to the next room
 

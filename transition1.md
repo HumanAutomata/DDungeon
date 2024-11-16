@@ -2,10 +2,13 @@
 
 similar description as the first corridor
 
-use the nlp to add some flavour text
+> use the nlp to add some flavour text
 
-could add a choice here, or just a transition to the boss room
+You walk forward and see a large door
 
+> the boss room; words: vast, royal, grand, nature, wood, elvish
+
+as you approach, the doors swing open on their own
 
 [room3](room3.md)
 
