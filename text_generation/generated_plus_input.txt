@@ -1,0 +1,396 @@
+=== Generated Text ===
+
+0.  A man is riding a bike in a park on a sunny day with the sun shining through the trees.
+1.  A man is riding a bike in a park on a sunny day with the sun shining through the clouds.
+2.  A man is riding a bike in a park on a sunny day with the sun shining on his face.
+3.  A man is riding a bike in a park on a sunny day with the sun shining through a window.
+4.  A man is riding a bike in a park on a sunny day with a group of friends and family.
+5.  Two bikes are parked next to each other on the side of the road with a park bench next to them.
+6.  Two bikes are parked next to each other on the side of the road with a park bench in the middle.
+7.  Two bikes are parked next to each other on the side of the road with a park bench in between.
+8.  Two bikes are parked next to each other on the side of the road on a sunny day in a park.
+9.  Two bikes are parked next to each other on the side of the road with a park bench next to it.
+
+
+---------------------------------------------------------------------------------------------------------------------------
+=== Settings and Prompts ===
+
+prefix = 
+suffix = . Greeekkk!<|endoftext|>
+prompt = generate a room description as if a goblin was giving it
+keyphrase = ['dark', 'dingy']
+keyphrase = ['and', '. ']
+keyphrase = ['damp', 'cramped']
+min length = 20, max length = 40
+min_new_tokens = 10, max_new_tokens = 50
+beam_size = 32
+hmm_batch_size = 2
+We strongly recommend passing in an `attention_mask` since your input_ids may be padded. See https://huggingface.co/docs/transformers/troubleshooting#incorrect-output-when-padding-tokens-arent-masked.
+You may ignore this warning if your `pad_token_id` (50256) is identical to the `bos_token_id` (50256), `eos_token_id` (50256), or the `sep_token_id` (None), and your input is not padded.
+
+=== Generated Text ===
+
+0.  to you.
+
+dampen
+
+darken
+
+darken
+
+darken
+
+darken
+
+darken
+
+darken
+
+darken
+
+and so on and so on and so on and so on. Greeekkk!
+1.  to you.
+
+dampen
+
+darken
+
+darken
+
+darken
+
+darken
+
+darken
+
+darken
+
+darken
+
+darken
+and so on and so on and so on. Greeekkk!
+2. .
+
+dampen
+
+darken
+
+dampen
+
+dampen
+
+dampen
+
+dampen
+
+dampen
+
+and so on and so on and so on and so on etc. Greeekkk!
+3. .
+
+dampen
+
+darken
+
+dampen
+
+dampen
+
+dampen
+
+dampen
+
+dampen
+
+and so on and so on and so on and so on again. Greeekkk!
+4.  to you.
+
+dampen
+
+darken
+
+darken
+
+darken
+
+darken
+
+darken
+
+darken
+
+darken
+
+darken
+and so on and so forth and so on. Greeekkk!
+5. .
+
+dampen
+
+darken
+
+dampen
+
+dampen
+
+dampen
+
+dampen
+
+dampen
+
+and so on and so on and so on and so on forever. Greeekkk!
+6. .
+
+dampen
+
+darken
+
+dampen
+
+dampen
+
+dampen
+
+dampen
+
+dampen
+
+and so on and so forth and so on and so on etc. Greeekkk!
+7. .
+
+dampen
+
+darken
+
+dampen
+
+dampen
+
+dampen
+
+dampen
+
+dampen
+
+and so on and so forth and so on and so on again. Greeekkk!
+8. .
+
+dampen
+
+darken
+
+dampen
+
+dampen
+
+dampen
+
+dampen
+
+dampen
+
+and so on and so forth and so on and so forth etc. Greeekkk!
+9. .
+
+dampen
+
+darken
+
+dampen
+
+dampen
+
+dampen
+
+dampen
+
+dampen
+
+and so on and so forth and so on and so on forever. Greeekkk!
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+=== Settings and Prompts ===
+
+prefix = 
+suffix = . Greeekkk!<|endoftext|>
+prompt = generate a room description as if a goblin was giving it
+keyphrase = ['dark', 'dingy']
+keyphrase = ['and', '. ']
+keyphrase = ['damp', 'cramped']
+min length = 10, max length = 20
+min_new_tokens = 10, max_new_tokens = 30
+beam_size = 4
+hmm_batch_size = 2
+
+=== Generated Text ===
+
+0.  to you.
+
+dampendarkness
+
+dampendarkness
+
+dampendarkness
+and you can see it. Greeekkk!
+1.  to you.
+
+dampendarkness
+
+dampendarkness
+
+dampendarkness
+and then you can see. Greeekkk!
+2.  to you.
+
+dampendarkness
+
+dampendarkness
+
+dampendarkness (and its variants and variants. Greeekkk!
+3.  to you.
+
+dampendarkness
+
+dampendarkness
+
+dampendarkness (and its variants and variations. Greeekkk!
+
+---------------------------------------------------------------------------------------------------------------------------
+
+=== Settings and Prompts ===
+
+prefix = You see a
+suffix = . Greeekkk!<|endoftext|>
+prompt = <|endoftext|> You see a
+keyphrase = ['dark', 'dingy']
+keyphrase = ['damp', 'cramped']
+keyphrase = ['room', 'bed']
+min length = 8, max length = 15
+min_new_tokens = 5, max_new_tokens = 25
+beam_size = 4
+hmm_batch_size = 1
+We strongly recommend passing in an `attention_mask` since your input_ids may be padded. See https://huggingface.co/docs/transformers/troubleshooting#incorrect-output-when-padding-tokens-arent-masked.
+You may ignore this warning if your `pad_token_id` (50256) is identical to the `bos_token_id` (50256), `eos_token_id` (50256), or the `sep_token_id` (None), and your input is not padded.
+
+=== Generated Text ===
+
+0. You see a woman in a bathtub with a bath towel wrapped around her.
+
+damproom_darkroom_1. Greeekkk!
+1. You see a woman in a bathtub with a bath towel wrapped around her.
+
+damproom_darkroom_01. Greeekkk!
+2. You see a woman in a bathtub with a bath towel wrapped around her.
+
+damproom_dark_room_1. Greeekkk!
+3. You see a woman in a bathtub with a bath towel wrapped around her.
+
+damproom_dark_room_01. Greeekkk!
+Generated in 198.49931025505066
+
+---------------------------------------------------------------------------------------------------------------------------
+
+=== Settings and Prompts ===
+
+prefix = You see
+suffix = .<|endoftext|>
+prompt = <|endoftext|> You see
+keyphrase = ['dark', 'dingy']
+keyphrase = ['room']
+keyphrase = ['damp', 'cramped']
+keyphrase = ['bed']
+min length = 10, max length = 20
+min_new_tokens = 10, max_new_tokens = 30
+beam_size = 4
+hmm_batch_size = 2
+We strongly recommend passing in an `attention_mask` since your input_ids may be padded. See https://huggingface.co/docs/transformers/troubleshooting#incorrect-output-when-padding-tokens-arent-masked.
+You may ignore this warning if your `pad_token_id` (50256) is identical to the `bos_token_id` (50256), `eos_token_id` (50256), or the `sep_token_id` (None), and your input is not padded.
+=== Generated Text ===
+
+0. You see the "darkroom" with the "dampbed" light and the camera on a tripod.
+1. You see the "darkroom" with the "dampbed" light and the camera on the tripod.
+2. You see the "darkroom" with the "dampbed" light and the camera on it.
+3. You see the "darkroom" with the "dampbed" light and the camera in the dark.
+Generated in 319.451189994812
+
+
+---------------------------------------------------------------------------------------------------------------------------
+=== Settings and Prompts ===
+
+prefix = You see a
+suffix = . Greeekkk!<|endoftext|>
+prompt = <|endoftext|> You see a
+keyphrase = ['dark', 'dingy']
+keyphrase = ['damp', 'cramped']
+keyphrase = ['room', 'bed']
+min length = 8, max length = 15
+min_new_tokens = 5, max_new_tokens = 25
+beam_size = 32
+hmm_batch_size = 1
+We strongly recommend passing in an `attention_mask` since your input_ids may be padded. See https://huggingface.co/docs/transformers/troubleshooting#incorrect-output-when-padding-tokens-arent-masked.
+You may ignore this warning if your `pad_token_id` (50256) is identical to the `bos_token_id` (50256), `eos_token_id` (50256), or the `sep_token_id` (None), and your input is not padded.
+
+=== Generated Text ===
+
+0. You see a sign that says "darkroom" and "damproom" on the wall. Greeekkk!
+1. You see a "darkroom" with a "damp room" in the corner. Greeekkk!
+2. You see a "darkroom" and a "damproom" in the same room. Greeekkk!
+3. You see a sign that says "darkroom" and "damproom" on a wall. Greeekkk!
+4. You see a sign that says "darkroom" and "damproom" in the window. Greeekkk!
+5. You see a "darkroom" with a "damp room" in the background. Greeekkk!
+6. You see a sign that says "darkroom" and "damproom" on the door. Greeekkk!
+7. You see a sign saying "darkroom" and "damproom" on the wall. Greeekkk!
+8. You see a sign that says "darkroom" and "damproom" on the side. Greeekkk!
+9. You see a sign saying "darkroom" and "damproom" in the window. Greeekkk!
+Generated in 1771.5205969810486 seconds
+
+---------------------------------------------------------------------------------------------------------------------------
+=== Settings and Prompts ===
+
+prefix = You see a
+suffix = . Greeekkk!<|endoftext|>
+prompt = <|endoftext|> You see a
+keyphrase = ['dark', 'dingy']
+keyphrase = ['room', 'bed']
+min length = 8, max length = 15
+min_new_tokens = 5, max_new_tokens = 25
+beam_size = 32
+hmm_batch_size = 1
+We strongly recommend passing in an `attention_mask` since your input_ids may be padded. See https://huggingface.co/docs/transformers/troubleshooting#incorrect-output-when-padding-tokens-arent-masked.
+You may ignore this warning if your `pad_token_id` (50256) is identical to the `bos_token_id` (50256), `eos_token_id` (50256), or the `sep_token_id` (None), and your input is not padded.
+
+=== Generated Text ===
+
+0. You see a girl in a bathtub with a bath towel wrapped around her.
+
+darkroom. Greeekkk!
+1. You see a woman in a bathtub with a bath towel wrapped around her.
+
+darkroom. Greeekkk!
+2. You see a girl in a bathtub with a bath towel wrapped around her waist.
+
+darkroom. Greeekkk!
+3. You see a man in a bathtub with a bath towel wrapped around him.
+
+darkroom. Greeekkk!
+4. You see a woman in a bathtub with a bath towel wrapped around her waist.
+
+darkroom. Greeekkk!
+5. You see a man in a bathtub with a bath towel wrapped around his waist.
+
+darkroom. Greeekkk!
+6. You see a woman in a bathtub with a bath towel wrapped around her body.
+
+darkroom. Greeekkk!
+7. You see a woman in a bathtub with a bath towel wrapped around her head.
+
+darkroom. Greeekkk!
+8. You see a girl in a bathtub with a bath towel wrapped around her.
+ darkroom. Greeekkk!
+9. You see a woman in a bathtub with a bath towel wrapped around her.
+ darkroom. Greeekkk!
+Generated in 269.0792381763458 seconds
+
