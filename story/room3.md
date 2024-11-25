@@ -43,7 +43,8 @@ The Administators
 1. make a run for it - you think your potion will help, but you fail - GG
 2. examine the chests
 
-> describe the chests
+The first chest it blood red, with vertical brown stripes.
+
 
 - two of them will match the chests you saw before
     - in the start

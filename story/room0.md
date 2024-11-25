@@ -1,13 +1,13 @@
 # Room0
----
 
-- don't remember anything
+You slowly wake up in an unfamiliar bed. It's cold. It's dark. It's damp.
 
+You can't remember anything, and everytime you try to think, you get a splitting headache.
 
-> list of words: dark, dingy, damp, cramped
+As you look around you, you see a cramped and dingy room. There's a dim light above that alluminates your
+sorroundings, but you can't make out it's source. On your left, you see a chest. On top of lies a note.
 
-
-- find a note with some information:
+You pick it up and it reads:
 ```
 Hello %^%%$&#,
 You have been given a great opportunity.
@@ -24,29 +24,35 @@ Good luck!
 Sincerely,
 The Administators
 ```
-You look over and see a chest at foot of the bed
 
 ## choose a companion
-> todo later
+As you finish reading the note, a booming voice resonates in your head.
+"CHOOSE A COMPANION, ADVENTURER!"
 
+Then you see two siluettes. On of them seems to be a goblin, and the other a spirit.
 
-`Prompt the player to examine the chest`
+### choose the companion
+From now on, the Goblin dialogue will start with G: and the spirit's dialogue will start with S:
+
+G: "You should look inside the chest, Greeekkk!"
+S: "Ah..., maybe you should look inside the chest. Only if you want, of course. You don't h-h-have to."
 
 ## choices
----
 1. do nothing:
 
-> I highly reccomend you look at the chest
+G: "You should reaaaaly --- Greeekkk --- use the chest. Greeekkk!"
+S: "I know I s-s-said you don't have to, but maybe you should, like, examine the chest"
 
-
-- but you keep ignoring it
-- theatrical death - ceiling collapses, lava floods the room
+### If you keep ignoring it
+You start to hear rumbling and the ceiling starts to collapse on top of you. At the same time, lava starts
+flooding the room, and it slowly engulfs the bed you are laying on. - END
 
 2. Examine the chest
-Examining the chest you find the following items:
+
+You look more closely at the chest. It's got a blood red colour, with vertical brown stripes.
+Opening it, you see the following items:
 
 ### Items
----
 1. **sword**
     - the fighting / bad choice
     - face more monsters / monsters attack you
@@ -60,17 +66,15 @@ Examining the chest you find the following items:
     - will let the player get some extra item later
     - fancy, heavy, ancient
 
-As soon as the player picks an item, the chest dissapears
-- sinks into the floor, teleports, flash of light and its gone
+As soon as the you choose an items, the chest sinks into the floor and dissapears.
 
-Then you hear rumbling and some dust falls onto your shoulders
+Then you hear rumbling and some dust falls onto your shoulders.
 
-> You should probably hurry up
+G: "Hurry up and get out the room, Greeekkk!"
+S: "You s-s-should probably leave"
 
 ## Choice
----
-1. Stay - game over
+1. Stay - same death as above
 2. Go to the next room
-
 
 [transition0](transition0.md)
