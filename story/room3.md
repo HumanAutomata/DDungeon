@@ -1,33 +1,35 @@
 # Room3
 
-> A throne room, elf / nature themed
-> a statue of an elf king is sitting on the throne
+You enter a throne room. An elf statue sits on the throne, behind which you spot the exit.
 
 > [!NOTE]
 > to make it here, you either chose the amulet or the key
 
-You see the exit behind the throne
-
 # if amulet
-1. make a run for it - you fail - GG
+1. rush for the exit
+You try to rush for the exit, but the statue turns its head and shoots magic out of its eyes, disentegrating you - END
+
 2. approach the elf
+As you approach the throne, you see that the statue is holding out its hand, as if asking for something.
 
-> you get a backstory of the elf - the amulet was his daughter's
+G: "Give him the Amulet. Greekkk!"
+S: "R-r-return the Amulet to him, please"
 
-1. return the amulet to the king - place it on the statue's hand
+1. return the amulet to the king
+You place the Amulet in the palm of the statue. As you do, the exit door behin the throne begins to open.
 
-Then you get a free passage
+1. exit
 
-you exit through a door behind the throne and start ascending the stairs... to be continued
+You exit through the door and start ascending a flight of stairs... to be continued
 
 # if key
+1. rush for the exit
+You try to rush for the exit, thinking that your potion will help. However, before you can cover any distace,
+the statue turns its head and shoots magic out of its eyes, disentegrating you - END
 
+# if you approached
 1. approach the statue
-
-You see three chests and a note on the floor
-
-1. pick up the note
-You pick up the note and it reads:
+As you approach the statue, three chests rise out of the floor. A note appears in front of you:
 
 ```
 One of these chests holds the key to get out of this room.
@@ -40,25 +42,41 @@ Good Luck!
 The Administators
 ```
 
-1. make a run for it - you think your potion will help, but you fail - GG
-2. examine the chests
+2. rush for the exit
+You try to rush for the exit, thinking that your potion will help. However, before you can cover any distace,
+the statue turns its head and shoots magic out of its eyes, disentegrating you - END
 
-The first chest it blood red, with vertical brown stripes.
+3. examine the chests
+You take a closer look at the chests
+The chest on the left is blood red in colour, with horizontal brown lines.
+The chest in the center is green, with a vertical white stripe.
+The chest on the right is dark grey, with pink vertical stripes.
 
+G: "Choose carefully! Greeekkk!"
+S: "C-c-choose with caution"
 
 - two of them will match the chests you saw before
     - in the start
     - in the previous room
 - and the last one will have a new design
 
-
 ## choice
 1. pick chest one - devoured by the mimic
 2. pick chest two - devoured by the mimic
-2. pick chest three - you open the chest and see the amulet you saw at the beginning
+3. pick chest three - you chose correctly
 
-> you get a backstory of the elf - the amulet was his daughter's
+### 1-2
+You try to open the chest, but it morphs into a mimic and devours you. - END
 
-1. return the amulet to the king - place it on the statue's hand
+### 3
+You open the third chest and find the same Amulet you saw earlier
 
-you exit through a door behind the throne and start ascending the stairs... to be continued
+G: "Give him the Amulet. Greekkk!"
+S: "R-r-return the Amulet to him, please"
+
+1. return the amulet to the king
+You place the Amulet in the palm of the statue. As you do, the exit door behin the throne begins to open.
+
+1. exit
+
+You exit through the door and start ascending a flight of stairs... to be continued

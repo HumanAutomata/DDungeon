@@ -1,7 +1,5 @@
 # Transition0
 
-words: mossy, nature, jewels imbedded in the walls that give off light
-
 You exit to room and enter a mossy tunnel. As you keep walking, you
 notice that the light is coming from, what seems to be, jewels embeded in the walls.
 

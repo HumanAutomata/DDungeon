@@ -1,14 +1,15 @@
 # Transition1
 
-similar description as the first corridor
+You exit to a similar corridor and quickly walk through.
 
-> use the nlp to add some flavour text
+At the end of the passage, you see a grand enterance. Its wooden doors carved with intricate symbols.
 
-You walk forward and see a large door
+G: "Elves. Greeaakkk!"
+S: "E-e-elves!"
 
-> the boss room; words: vast, royal, grand, nature, wood, elvish
+As you approach, the doors swing open on their own.
 
-as you approach, the doors swing open on their own
+You enter
 
 [room3](room3.md)
 
