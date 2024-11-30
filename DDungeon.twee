@@ -1,0 +1,677 @@
+:: StoryTitle
+DDungeon
+
+
+:: StoryData
+{
+  "ifid": "64F9B166-DDCE-42DB-8A70-A6CCEDBF9DAA",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Room 0",
+  "zoom": 1
+}
+
+
+:: Abyss {"position":"1725,350","size":"100,100"}
+(enchant:?page,(bg:(gradient: 0, 0,#888888,0.60,#000000, 0.90,#000000, 1,#888888)))
+
+You keep walking and come to an abyss—a large gap you can’t cross.  
+
+Choice:
+
+* [[Wait|Dragon]]
+* [[Try to jump across|Fall]]
+
+
+
+:: Amulet Rush {"position":"1175,1425","size":"100,100"}
+(enchant:?page,(bg:(gradient: 90, 0,#000000,0.1987,#000000,0.2395,#e61919,0.2752,#000000,0.6726,#000000,0.7159,#e61919,0.7541,#000000,1,#000000)))
+
+You try to rush for the exit, but the statue turns its head and shoots magic out of its eyes, disintegrating you.  
+
+[[Restart|Room 0]]
+
+
+:: Approach Statue Amulet {"position":"1125,1650","size":"100,100"}
+(enchant:?page,(bg:(gradient: 90, 0,#7f19e6,0.1529,#7f19e6,0.1783,#d1d100,0.8229,#d1d100,0.8561,#7f19e6,1,#7f19e6)))
+
+You approach the throne, and the elf statue’s hand is outstretched.  
+
+(if: $goblin is true)[Goblin: "Give him the Amulet. Greekkk!"  ]
+(else-if: $spirit is true)[Spirit: "R-r-return the Amulet to him, please."  ]
+
+Choice:  
+
+* [[Return the Amulet to the king|Return Amulet]]
+
+
+
+:: Chest Description {"position":"200,825","size":"100,100"}
+(enchant:?page,(bg:(gradient: 0, 0,#54300d,0.1656,#54300d,0.2089,#888888,0.2548,#54300d,0.4229,#54300d,0.4662,#000000,0.5146,#54300d,0.7261,#54300d,0.772,#888888,0.8178,#54300d,1,#54300d)))
+
+The chest is old, made of dark wood reinforced with iron. It looks sturdy and important.  
+
+Choice:  
+
+* [[Try to open it|Key Needed]]  
+* [[Keep moving|Exit]]  
+
+
+:: Chest Locked {"position":"875,500","size":"100,100"}
+(enchant:?page,(bg:(gradient: 0, 0.479,(hsl:30,0.7647,0.3,1),0.5,#000000,0.5248,(hsl:30,0.7647,0.3,1))))
+
+You find a chest, but it’s locked. You’ll need a key.
+
+[[Restart|Room 0]]  
+
+
+
+:: Correct Chest {"position":"2325,1575","size":"100,100"}
+(enchant:?page,(bg:(gradient: 90, 0,#888888,0.0968,#888888,0.1376,#e619e5,0.1783,#888888,0.2497,#888888,0.2904,#e619e5,0.3312,#888888,0.4433,#888888,0.4764,#e68019,0.5096,#888888,0.6344,#888888,0.6726,#e619e5,0.7108,#888888,0.7847,#888888,0.8204,#e619e5,0.8586,#888888,0.9987,#888888)))
+
+You open the chest and find the same Amulet you saw earlier.  
+
+(if:$goblin is true)[Goblin: "Give him the Amulet. Greekkk!"  ]
+(if:$spirit is true)[Spirit: "R-r-return the Amulet to him, please."]  
+
+[[Return the Amulet to the king|Return Amulet]]
+
+
+
+:: Crushed {"position":"175,550","size":"100,100"}
+(enchant:?page,(bg:(gradient: 90, 0,#bababa,0.20,#565656,0.5,#000000,0.80,#565656,1,#bababa)))
+
+The golem moves with surprising speed and crushes you.
+
+[[What happens now?|Room 0]]
+
+
+
+:: Death {"position":"900,0","size":"100,100"}
+(enchant:?page,(bg:(gradient: 90, 0,#363535,0.0051,#000000,0.5197,#b7b3b3,1,#000000)))
+No matter what choice, the outcome has already been determined.
+
+Before you can act, you notice a crack appear on the wall.  
+
+As you try to move away, you realize, to your horror, that the light is attached to something.  
+
+You try to make sense of it, but you get crushed by one of its limbs.
+
+[[What happens now?|Room 0]]
+
+
+
+:: Death1 {"position":"1325,175","size":"100,100"}
+(enchant:?page,(bg:(gradient: 106, 0.0637,#e619e5,0.2752,(hsl:30,0.8039,0.5,0.5),0.5146,(hsl:60,0.8039,0.5,0.8),0.7873,(hsl:180,0.8039,0.5,0.6),0.9478,#7f19e6)))
+
+(if:$goblin is true)[Goblin: "That wasn't very Greeeekkkk!"]
+(if:$spirit is true)[Spirit: "W-w-why?"]
+
+The fairies swarm you in retaliation. You are overwhelmed and crushed by their magic.
+
+[[What happens now?|Room 0]]
+
+
+
+:: Double Jump {"position":"1750,700","size":"100,100"}
+(enchant:?page,(bg:(gradient: 0, 0,#dd11dd,0.5,#000000,1,#dd11dd)))
+
+You take a run-up and jump. Your first jump is too short, but the potion lets you jump again, and you make it across the gap!  
+
+[[Find the exit|Transition 1]]
+
+
+:: Dragon {"position":"2025,175","size":"100,100"}
+(enchant:?page,(bg:(gradient: 90, 0,#7f19e6,0.20,#290849,0.5,#000000,0.80,#300b56,1,#7f19e6)))
+
+As you wait, a massive dragon claw grabs you and pulls you into the abyss 
+
+[[What happens now?|Room 0]]
+
+
+
+:: Examine Chests {"position":"2200,1450","size":"100,100"}
+(enchant:?page,(bg:(gradient: 90, 0,#ae0909,0.0764,#ae0909,0.1096,#6a3b0b,0.1325,#ae0909,0.2217,#ae0909,0.2522,#6a3b0b,0.2803,#ae0909,0.3338,#ae0909,0.3567,#0c4b0c,0.4127,#0c4b0c,0.4408,#ffffff,0.4688,#0c4b0c,0.5427,#0c4b0c,0.5682,#ffffff,0.5962,#0c4b0c,0.6395,#0c4b0c,0.6777,#333333,0.7439,#333333,0.7822,#e619e5,0.8153,#333333,0.8688,#333333,0.9121,#e619e5,0.9274,#333333,0.9987,#333333)))
+
+You examine the three chests closely:  
+
+- The left chest is blood-red with horizontal brown lines.  
+- The center chest is green with a vertical white stripe.  
+- The right chest is dark grey with pink vertical stripes.  
+
+(if:$goblin is true)[Goblin: "Choose carefully! Greeekkk!"  ]
+(if:$spirit is true)[Spirit: "C-c-choose with caution." ] 
+
+Choice:  
+
+* [[Pick chest one|Mimic 1]]  
+* [[Pick chest two|Mimic 2]]  
+* [[Pick chest three|Correct Chest]]
+
+
+
+:: Exit {"position":"450,1125","size":"100,100"}
+(enchant:?page,(bg:(gradient: 90, 0,(hsl:0,0,0,0.6),0.3, #bababa, 0.5,#bababa, 0.7, #bababa, 0.9962,(hsl:0,0,0,0.55))))
+You eventually reach an exit and leave the cave.  
+
+[[Go to the next room|Transition 1]]  
+
+
+
+:: Fairy Communication {"position":"1350,525","size":"100,100"}
+(enchant:?page,(bg:(gradient: 90, 0,#888888,0.1096,#000000,0.1554,#e61919,0.1987,#e68019,0.2446,#e5e619,0.2879,#19e619,0.3312,#7E7EfB,0.3745,#7f19e6,0.4229,#000000,0.614,#000000,0.6573,#e61919,0.7032,#e68019,0.7465,#e5e619,0.7898,#19e619,0.8357,#7E7EfB,0.879,#7f19e6,0.9274,#000000,1,#888888)))
+
+You don’t understand the fairies’ language, but they follow you around. You keep walking and come across an abyss.  
+
+As you try to figure out a way to cross, the fairies surround you, lifting you up and carrying you over the gap.  
+
+[[Go to Next Room|Transition 1]]
+
+
+:: Fall {"position":"1750,175","size":"100,100"}
+(enchant:?page,(bg:(gradient: 180, 0,#888888,0.20,#4d4d4d,0.40,#000000,0.60,#000000,1,#000000)))
+
+You do a run-up, jump, and fall into the abyss.
+
+[[What happens now?|Room 0]]
+
+
+
+:: Fight {"position":"400,425","size":"100,100"}
+(enchant:?page,(bg:(gradient: 140, 0,(hsl:0,0,0.7882,0.6),0.4917,#403f3f,0.9962,(hsl:0,0,0.7882,0.55))))
+You swing your sword at the golem, but it’s ineffective. The golem crushes you.
+
+[[What happens now?|Room 0]]
+
+
+
+:: Golem Chase (Key) {"position":"550,900","size":"100,100"}
+(enchant:?page,(bg:(gradient: 90, 0,#343434,0.0739,#888888,0.1401,#343434,0.2955,#343434,0.3669,#888888,0.428,#343434,0.5605,#343434,0.6318,#888888,0.693,#343434,0.8229,#343434,0.8892,#888888,0.9631,#343434,1,#343434)))
+
+You start running, but as you do, more and more golems awaken.  
+
+Choice:  
+
+* [[Try to open a chest|Use Key]]  
+* [[Keep running|GolemSurronded]]  
+
+
+
+:: Golem Chase (Sword) {"position":"750,725","size":"100,100"}
+(enchant:?page,(bg:(gradient: 90, 0,#343434,0.0739,#888888,0.1401,#343434,0.2955,#343434,0.3669,#888888,0.428,#343434,0.5605,#343434,0.6318,#888888,0.693,#343434,0.8229,#343434,0.8892,#888888,0.9631,#343434,1,#343434)))
+
+You start running, but as you do, more and more golems awaken.  
+
+Choice:  
+
+* [[Try to open a chest|Chest Locked]]  
+* [[Keep running|GolemSurronded]]  
+
+
+
+:: Golem Frozen {"position":"200,700","size":"100,100"}
+You use the amulet, and the golem freezes in place, allowing you to walk past it.  
+
+Ahead, you find a wooden chest, distinct from the one you saw earlier.  
+
+Choice:  
+
+* [[Examine the chest|Chest Description]]  
+* [[Ignore the chest and move on|Exit]]  
+
+
+
+:: GolemSurronded {"position":"950,900","size":"100,100"}
+(enchant:?page,(bg:(gradient: 90, 0,#bababa,0.20,#565656,0.5,#000000,0.80,#565656,1,#bababa)))
+
+The golems surround you, and you’re crushed.
+
+[[What happens now?|Room 0]]
+
+
+
+:: Intersection {"position":"975,350","size":"100,100"}
+(enchant:?page,(bg:(gradient: 90, 0,#8b5927,0.3541,#8b5927,0.507,#000000,0.6369,#888888,1,#888888)))
+
+As you keep walking, you come across an intersection with two doors.
+
+The first door is sturdy, and it's made out of rock. The second door smells like fresh cut grass, and it's made out of wood.
+ 
+Choice:
+
+* [[Go through Door 1|Room 1]]
+* [[Go through Door 2|Room 2]]
+
+
+
+:: Jewel1 {"position":"900,150","size":"100,100"}
+(enchant:?page,(bg:(gradient: 100, 0,#363535,0.0051,#000000,0.2701,(hsl:180,0.8039,0.5,0.4),0.428,#888888,0.5401,(hsl:300,0.8039,0.5,0.45),0.6726,#888888,0.7873,(hsl:120,0.8039,0.5,0.55),1,#000000)))
+
+You try to yank it out, but it's not budging.
+
+Choice:
+
+* [[Give up and keep walking|Intersection]]
+* [[Try again|Jewel2]]
+
+
+:: Jewel2 {"position":"1100,125","size":"100,100"}
+(enchant:?page,(bg:(gradient: 130, 0,#363535,0.0051,#000000,0.2701,(hsl:180,0.8039,0.5,0.4),0.5401,(hsl:300,0.8039,0.5,0.45),0.7873,(hsl:120,0.8039,0.5,0.55),1,#000000)))
+
+You are getting it looser; you feel it give a little bit. However, you are getting a bad feeling about this—it seems to be coming loose on its own.
+
+Choice:
+
+* [[Give up and keep walking|Intersection]]
+* [[Keep going|Death]]
+
+
+
+:: Key Chest {"position":"1700,525","size":"100,100"}
+(enchant:?page,(bg:(gradient: 180, 0,(hsl:0,0,0,0.45),0.2191,#683b0d,0.3159,#000000,0.5,#154118,0.6624,#000000,0.8076,#683b0d,1,#000000)))
+
+You find a chest near the abyss.  
+
+The chest looks old and weathered, covered in intricate runes.
+
+Choice:
+
+* [[Open the chest|Key Potion]]
+* [[Ignore it and keep walking|Abyss]]
+
+
+
+:: Key Needed {"position":"75,950","size":"100,100"}
+(enchant:?page,(bg:(gradient: 0, 0,#54300d,0.1656,#54300d,0.2089,#888888,0.2548,#54300d,0.4229,#54300d,0.4662,#000000,0.5146,#54300d,0.7261,#54300d,0.772,#888888,0.8178,#54300d,1,#54300d)))
+
+You try to open the chest, but it’s locked. You’ll need a key.  
+
+[[Keep moving|Exit]]  
+
+
+
+:: Key Potion {"position":"1875,575","size":"100,100"}
+(enchant:?page,(bg:(gradient: 0,0.3159,#683b0d,0.5,#dd11dd,0.6624,,#683b0d)))
+
+You open the chest and find a potion.  
+
+"Oh, that’s a double jump potion—I didn’t know there were any left in existence."
+
+[[Drink the potion and jump across the abyss|Double Jump]]
+
+
+
+
+:: Key Rush {"position":"1850,1350","size":"100,100"}
+(enchant:?page,(bg:(gradient: 90, 0,#000000,0.1987,#000000,0.2395,#e61919,0.2752,#000000,0.6726,#000000,0.7159,#e61919,0.7541,#000000,1,#000000)))
+
+You try to rush for the exit, thinking your potion might help, but the statue turns its head and shoots magic out of its eyes, disintegrating you.  
+
+**The End**  
+
+[[Restart|Room 0]]
+
+
+
+:: Mimic 1 {"position":"2025,1525","size":"100,100"}
+(enchant:?page,(bg:(gradient: 90, 0,#ffffff,0.507,#000000,1,#ffffff)))
+
+The chest morphs into a mimic and devours you.  
+
+**The End**  
+
+[[Restart|Room 0]]
+
+
+
+:: Mimic 2 {"position":"2025,1400","size":"100,100"}
+(enchant:?page,(bg:(gradient: 90, 0,#ffffff,0.507,#000000,1,#ffffff)))
+
+The chest morphs into a mimic and devours you.  
+
+**The End**  
+
+[[Restart|Room 0]]
+
+
+:: Potion Effect {"position":"925,1200","size":"100,100"}
+(enchant:?page,(bg:(gradient: 90, 0,(hsl:0,0,0,0.6),0.3, #bababa, 0.5,#bababa, 0.7, #bababa, 0.9962,(hsl:0,0,0,0.55))))
+
+You feel lighter than ever before. The golems fall behind as you run.  
+You eventually find the exit and escape.  
+
+[[Go to the next room|Transition 1]]  
+
+
+
+:: Return Amulet {"position":"2175,1650","size":"100,100"}
+(enchant:?page,(bg:(gradient: 90, 0,#7f19e6,0.3618,#7f19e6,0.4076,#e5e619,0.4994,#e68019,0.5962,#e5e619,0.642,#7f19e6,0.9121,#ffffff,0.9987,#7f19e6)))
+
+You place the Amulet in the statue’s palm. As you do, the exit door behind the throne begins to open.  
+
+[[Exit|Victory]]
+
+
+
+:: Room 0 {"position":"500,175","size":"100,100"}
+(enchant:?page,(bg:(gradient: 0, 0.0051,#000000,0.5,#114f21,1,#000000)))
+
+(set: $randomMessage to (random: 1, 2))
+
+(set: $answer to (prompt: "Type in a name",""))
+
+You slowly wake up in an unfamiliar bed. It's cold. It's dark. It's damp.
+
+You can't remember anything, and everytime you try to think, you get a splitting headache.
+
+As you look around you, you see a cramped and dingy room. There's a dim light above that alluminates your surroundings, but you can't make out it's source. On your left, you see a chest. On top of lies a note.
+
+You pick it up and it reads:
+
+"
+Hello (print: $answer),
+
+You have been given a great opportunity.
+Seize it and escape this dungeon.
+Make it to the top, and your wish will be fulfilled!
+
+To your left, you will find a chest containing some useful items.
+
+Feel free to use them as you wish, but remember two things:
+    ~ Everything has a price
+    ~ Actions have consequeces
+
+Good luck!
+
+Sincerely,
+The Administators
+"
+
+As you finish reading the note, a booming voice resonates in your head. "CHOOSE A COMPANION, ADVENTURER!"
+
+Then you see two siluettes. On of them seems to be a goblin, and the other a spirit.
+From now on, the Goblin dialogue will start with G: and the spirit's dialogue will start with S:
+
+''Choose a companion
+''
+(set: $goblin to false)
+(set: $spirit to false)
+|companion>[
+(if: $goblin is false)[
+        (link-replace: "(text-colour:red)[Goblin]")[
+            (set: $goblin to true) <!-- Set to true when chosen -->
+            (replace: ?companion)[Your choice: ''Goblin''] ]]
+    (if: $spirit is false)[
+        (link-replace: "(text-colour:magenta)[Spirit]")[
+            (set: $spirit to true) 
+            (replace: ?companion)[Your choice: ''Spirit''] ]]
+]
+(if:$goblin is true)[
+    (text-colour:grey)[Goblin: "You should look inside the chest, Greeekkk!"]]
+(else-if:$spirit is true)[
+    (text-colour:blue)[Spirit: "Ah..., maybe you should look inside the chest. Only if you want, of course. You don't h-h-have to."]]
+
+
+
+''Opening the chest...
+''
+(set: $sword to false)
+(set: $key to false)
+(set: $amulet to false)
+|choices>[ 
+    (if: $sword is false)[
+        (link-replace: "(text-colour:red)[Sword]")[
+            (set: $sword to true) <!-- Set to true when chosen -->
+            (replace: ?choices)[Your choice: ''Sword''] ]]
+    (if: $key is false)[
+        (link-replace: "(text-colour:magenta)[Key]")[
+            (set: $key to true) 
+            (replace: ?choices)[Your choice: ''Key''] ]]
+    (if: $amulet is false)[
+        (link-replace: "(text-colour:orange)[Amulet]")[
+            (set: $amulet to true) 
+            (replace: ?choices)[Your choice: ''Amulet'']]]]
+(if: $sword is true)[
+    (text-colour:red)[You have chosen the Sword.]]
+(if: $key is true)[
+    (text-colour:magenta)[You have chosen the Key.]]
+(if: $amulet is true)[
+    (text-colour:orange)[You have chosen the Amulet.]]
+    
+    As soon as the you choose an items, the chest sinks into the floor and dissapears.
+
+A rumble is heard above, dust falls. You have to hurry up and form a decision quick!
+
+(if:$spirit is true)[ Spirit: "You s-s-should probably leave"]
+(else-if:$goblin is true)[Goblin: "Hurry up and get out the room, Greeekkk!"]
+
+''What will you do?
+''
+[[Continue with your journey|Transition0]] or [[Stay]]
+
+
+
+:: Room 1 {"position":"550,550","size":"100,100"}
+(enchant:?page,(bg:(gradient: 90, 0,(hsl:0,0,0.7882,0.6),0.2242,#0b6a0b,0.4917,#403f3f,0.7134,#0b6a0b,0.9962,(hsl:0,0,0.7882,0.55))))
+You enter a jagged, rocky expanse with small hills scattered around. The atmosphere feels natural, like a cave rather than something manmade.
+
+As you walk past one of the rocks, it starts to shift and grow taller. You realize it’s actually a rock golem!
+
+(if: $amulet is true)[
+    (if: $goblin is true)[Goblin: "Use the, Greeekkkk, amulet on them. It will stop them. Greekkkk!"]
+    (else-if: $spirit is true)[Spirit: "Q-q-quick! Use the amulet. It will put them back to sleep"]
+    Choice:  
+    * [[Use the amulet|Golem Frozen]]  
+    * [[Ignore companion|Crushed]]  ]
+
+(elseif: $sword is true)[
+     (if: $goblin is true)[Goblin: "Fight it, Greeekkk! Show em who's boss. Greeeeeeeekkkkk!"]
+    (else-if: $spirit is true)[Spitit: "R-r-ruuuuuun!"] 
+
+    Choice:  
+    * [[Fight the golem|Fight]]  
+    * [[Run|Golem Chase (Sword)]]  
+    * [[Ignore companion|Crushed]]  
+]
+
+(elseif: $key is true)[
+    (if: $goblin is true)[Goblin: "Run, you Greekkk! Maybe you will find something that will help you. Greeekkk!"]
+    (else-if: $spirit is true)[Spirit: "R-r-ruuuuuun!"]
+
+    Choice:  
+    * [[Fight the golem|Fight]]  
+    * [[Run|Golem Chase (Key)]]  
+    * [[Ignore companion|Crushed]]  
+]
+
+(else:)[
+    You have nothing to help you. The golem crushes you.  
+	[[What happens now?|Room 0]]
+]
+
+
+
+
+:: Room 2 {"position":"1400,350","size":"100,100"}
+(enchant:?page,(bg:(gradient: 90, 0,#11aa33,0.1096,#11aa33,0.1554,#e61919,0.1987,#e68019,0.2446,#e5e619,0.2879,#19e619,0.3312,#7E7EfB,0.3745,#7f19e6,0.4229,#11aa33,0.614,#11aa33,0.6573,#e61919,0.7032,#e68019,0.7465,#e5e619,0.7898,#19e619,0.8357,#7E7EfB,0.879,#7f19e6,0.9274,#11aa33,1,#11aa33)))
+
+As you enter, you see a garden, lush and full of life, with small fairies flying around and taking care of herbs. The scene feels magical and green, full of nature.
+
+(if: $amulet is true)[
+    The fairies notice the amulet and approach you, trying to communicate.
+
+    Choice:
+    
+    * [[Ignore them and find an exit|Abyss]]
+    * [[Attack or try to capture one|Death1]]
+    * [[Try to talk back to them|Fairy Communication]]
+]
+(elseif: $sword is true)[
+    The fairies notice the sword and seem wary of you.  
+    
+    Choice:
+    
+    * [[Ignore them and keep walking|Abyss]]
+    * [[Attack or try to capture one|Death1]]
+]
+(elseif: $key is true)[
+    The fairies seem indifferent to you.  
+    
+    Choice:
+    
+    * [[Ignore them and keep walking|Key Chest]]
+    * [[Attack or try to capture one|Death1]]
+]
+(else:)[
+    The fairies ignore you entirely.  
+    
+    [[Keep walking|Abyss]]
+]
+
+[[Go to the next room|Transition 1]]
+
+
+
+:: Room 3 {"position":"1650,1300","size":"100,100"}
+(enchant:?page,(bg:(gradient: 90, 0,#7f19e6,0.3618,#7f19e6,0.4076,#e5e619,0.5962,#e5e619,0.642,#7f19e6,0.9121,#ffffff,0.9987,#7f19e6)))
+
+You enter a grand throne room. An elf statue sits on the throne, and behind it, you spot the exit.  
+
+(if: $amulet is true)[
+    As you step closer, the statue's hand is outstretched, as if asking for something.  
+
+    (if:$goblin is true)[Goblin: "Give him the Amulet. Greekkk!" ] 
+   (if:$spirit is true)[Spirit: "R-r-return the Amulet to him, please."]   
+
+    Choice:  
+    
+    * [[Rush for the exit|Amulet Rush]]  
+    * [[Approach the elf|Approach Statue Amulet]]  
+]
+
+(else-if: $key is true)[
+    As you step closer, the statue emits a faint glow, and three chests rise from the floor. A note appears in front of you:  
+ "
+    ''One of these chests holds the key to get out of this room. The other two... let's say you don't want to open them :)''  
+
+    ''Before you cry out about unfairness, remember:''  
+    ''"One thing that makes humans unique from other races is their ability to use imagination."''
+    
+    Good Luck!  
+    -- The Administrators  
+"
+    Choice:  
+    
+    * [[Rush for the exit|Key Rush]]  
+    * [[Examine the chests|Examine Chests]]  
+]
+(else:)[
+    (text-colour:red)[You shouldn't be here without the Amulet or the Key. Restart the game.]
+    [[Restart|Room 0]]
+]
+
+
+
+:: Stay {"position":"475,0","size":"100,100"}
+''You are going to regret this!!!!!!''
+
+(if: $randomMessage is 1)[
+	(enchant:?page,	(bg:(gradient: 359, 0,#000000,0.5,#888888,1,#888888)))
+    The ceiling comes crashing down upon you! You have died!
+    
+    [[Everybody deserves another chance!|Room 0]]
+]
+(else-if: $randomMessage is 2)[
+	(enchant:?page,	(bg:(gradient: 359, 0,#e68019,0.5,#e5e619,1,#000000)))
+    The room fills with lava, you have perished!   
+    
+    [[Everybody deserves another chance!|Room 0]]
+]
+
+
+:: Transition 1 {"position":"1400,1150","size":"100,100"}
+(enchant:?page,(bg:(gradient: 90, 0,#182315,0.2268,#1d291a,0.265,#000000,0.3057,#503316,0.3643,#503316,0.3694,#e5e619,0.4,#503316,0.5732,#482e14,0.5936,#e5e619,0.6242,#482e14,0.6675,#442c17,0.7032,#000000,0.7389,#21301d,0.9987,#1b2618)))
+You exit to a similar corridor and quickly walk through.
+
+At the end of the passage, you see a grand entrance. Its wooden doors are carved with intricate symbols, glowing faintly in the dim light.
+
+(if: $goblin is true)[Goblin: "Elves. Greeaakkk!"]
+(else-if: $spirit is true)[Spirit: "E-e-elves!"]
+
+As you approach, the doors swing open on their own.
+
+You step into the next room...
+
+(if: $amulet is true)[
+    The symbols on the door pulse brightly as you enter, reacting to the amulet. A strange warmth fills you.  
+    [[Continue into Room 3|Room 3]]
+]
+
+(elseif: $key is true)[
+    The symbols flicker but dim as you approach. You feel the key in your pocket grow cool, as if it's suppressing something.  
+    [[Continue into Room 3|Room 3]]
+]
+
+(elseif: $sword is true)[
+    The symbols remain steady, unchanging. You grip your sword instinctively, ready for whatever lies ahead.  
+    [[Continue into Room 3|Room 3]]
+]
+
+(else:)[
+    The symbols seem to study you, glowing faintly before fading away. You hesitate, but the doors allow you to pass.  
+    [[Continue into Room 3|Room 3]]
+]
+
+
+:: Transition0 {"position":"750,175","size":"100,100"}
+(enchant:?page,(bg:(gradient: 90, 0,#000000,0.3,#224622,0.4,(hsl:180,0.8039,0.5,0.4),0.5,(hsl:300,0.8039,0.5,0.45),0.6,(hsl:120,0.8039,0.5,0.55),0.7,#224622,1,#000000)))
+
+You exit to room and enter a mossy tunnel. As you keep walking, you notice that the light is coming from, what seems to be, jewels embeded in the walls.
+
+(if: $goblin is true)[Goblin: "Those jewels look Greeekkk. They would sell for a pretty penny. ahhaahaa. Greeekkk!" ]
+(else-if: $spirit is true)[Spirit: "Wow! Those rocks are so pretty!"]
+
+Choice:
+
+* [[Try to take one of the jewels|Jewel1]]
+* [[Keep walking|Intersection]]
+
+
+
+:: Use Key {"position":"750,975","size":"100,100"}
+
+(enchant:?page,(bg:(gradient: 0,0.3159,#683b0d,0.5,#197fe6,0.6624,,#683b0d)))
+You use the key to open the chest and find a potion.  
+
+**It’s a potion of swiftness. Quickly drink it and keep running.**  
+(if: $goblin is true)[Goblin: "It's a potion of swiftness, Greeekkk! Quickly drink it an Greeeeeeeekkkkk!"]
+    (else-if: $spirit is true)[Spirit: "Oh My Godess! It-it-it's a potion if swiftness. I didn't know any still existed. Q-q-quickly drink it and run"]
+    
+Choice:  
+
+* [["I don't trust you"|GolemSurronded]]  
+* [[Drink the potion|Potion Effect]]  
+
+
+
+
+:: Victory {"position":"2325,1775","size":"100,100"}
+(enchant:?page,(bg:(gradient: 0, 0,#000000,0.1478,#888888,0.3057,#000000,0.4331,#888888,0.5809,#000000,0.7287,#888888,0.8662,#000000,1,#888888)))
+
+You exit through the door and start ascending a flight of stairs... 
+
+**To be continued...**
+
+
+
+
+:: StoryStylesheet [stylesheet]
+@import url('https://fonts.googleapis.com/css2?family=Almendra:wght@400;700&display=swap');
+
+* { 
+      font-family: 'Almendra', serif;
+}
+
+tw-link {
+    color: blue;
+}
