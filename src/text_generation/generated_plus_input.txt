@@ -25,8 +25,6 @@ min length = 20, max length = 40
 min_new_tokens = 10, max_new_tokens = 50
 beam_size = 32
 hmm_batch_size = 2
-We strongly recommend passing in an `attention_mask` since your input_ids may be padded. See https://huggingface.co/docs/transformers/troubleshooting#incorrect-output-when-padding-tokens-arent-masked.
-You may ignore this warning if your `pad_token_id` (50256) is identical to the `bos_token_id` (50256), `eos_token_id` (50256), or the `sep_token_id` (None), and your input is not padded.
 
 === Generated Text ===
 
@@ -394,3 +392,833 @@ darkroom. Greeekkk!
  darkroom. Greeekkk!
 Generated in 269.0792381763458 seconds
 
+
+---------------------------------------------------------------------------------------------------------------------------
+
+=== Settings and Prompts ===
+
+prefix = 
+suffix = . Greeekkk!<|endoftext|>
+prompt = give a a simple descroption of a room using the following adjectives
+keyphrase = ['dark', 'dingy']
+keyphrase = ['damp', 'cramped']
+min length = 8, max length = 20
+min_new_tokens = 10, max_new_tokens = 30
+beam_size = 32
+hmm_batch_size = 2
+We strongly recommend passing in an `attention_mask` since your input_ids may be padded. See https://huggingface.co/docs/transformers/troubleshooting#incorrect-output-when-padding-tokens-arent-masked.
+You may ignore this warning if your `pad_token_id` (50256) is identical to the `bos_token_id` (50256), `eos_token_id` (50256), or the `sep_token_id` (None), and your input is not padded.
+=== Generated Text ===
+
+0. :
+
+dark
+
+damp
+
+cool
+
+cooler
+
+cooler
+
+cooler
+
+cooler
+
+cool. Greeekkk!
+1. :
+
+damp
+
+dark
+
+warm
+
+warmly
+
+warmly
+
+warmly
+
+warmly
+
+warm. Greeekkk!
+2. :
+
+dark
+
+damp
+
+warm
+
+warmly
+
+warmly
+
+warmly
+
+warmly
+
+warm. Greeekkk!
+3. :
+
+dark
+
+damp
+
+warm
+
+warmly
+
+warmly warm
+
+warmly warm
+
+warmly. Greeekkk!
+4. :
+
+dark
+
+damp
+
+warm
+
+warmly
+
+warmly warm
+
+warmly warm
+
+warmly warm. Greeekkk!
+5. :
+
+dark
+
+damp
+
+warm
+
+warm
+
+warmly
+
+warmly
+
+warmly
+
+warmly. Greeekkk!
+6. :
+
+dark
+
+damp
+
+cool
+
+warm
+
+warmly
+
+warmly
+
+warmly
+
+warmly. Greeekkk!
+7. :
+
+dark
+
+damp
+
+warm
+
+warmly
+
+warmly
+
+warmly
+
+warmly
+
+warm. Greeekkk!
+8. :
+
+dark
+
+damp
+
+warm
+
+warm
+
+warmly
+
+warmly
+
+warmly
+
+warm. Greeekkk!
+9. :
+
+dark
+
+damp
+
+warm
+
+warm
+
+warm
+
+warm
+
+warm
+
+warm
+
+warm. Greeekkk!
+Generated in 98.49161338806152
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+=== Settings and Prompts ===
+
+prefix = 
+suffix = . Greeekkk!<|endoftext|>
+prompt = give a a simple descroption of a room or bed using the following adjectives
+keyphrase = [' dark', ' dingy', ' small']
+keyphrase = [' room', ' bed']
+min length = 8, max length = 10
+min_new_tokens = 5, max_new_tokens = 50
+beam_size = 64
+hmm_batch_size = 2
+
+=== Generated Text ===
+
+0. : small, small room, small bathroom, small kitchen, small bathroom. Greeekkk!
+1. : small, small room, small bathroom, small kitchen, small bedroom. Greeekkk!
+2. : small, small room, small bedroom, small bathroom, small bathroom. Greeekkk!
+3. : small, small room, small bedroom, small bathroom, small kitchen. Greeekkk!
+4. : small, small room, small bedroom, small bathroom, small kitchen, etc. Greeekkk!
+5. : small, small room, small bathroom, small kitchen, small kitchen. Greeekkk!
+6. : small, small room, small bed, small bathroom, small kitchen. Greeekkk!
+7. : roomy, small, small bathroom, small kitchen, small bathroom. Greeekkk!
+8. : small room, small bathroom, small kitchen, small bedroom. Greeekkk!
+9. : small room, small bedroom, small bathroom, small kitchen. Greeekkk!
+Generated in 73.12889051437378
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+=== Settings and Prompts ===
+
+prefix = 
+suffix = . Greeekkk!<|endoftext|>
+prompt = give a a simple descroption of a room or bed using the following adjectives
+keyphrase = [' room', ' bed', ' place']
+keyphrase = [' is dark', ' is dingy', ' is small']
+min length = 2, max length = 10
+min_new_tokens = 5, max_new_tokens = 50
+beam_size = 64
+hmm_batch_size = 2
+
+=== Generated Text ===
+
+0. :
+
+The room is small. Greeekkk!
+1. .
+
+The room is small and cozy. Greeekkk!
+2. .
+
+The room is small. Greeekkk!
+3. .
+
+The room is dark. Greeekkk!
+4. 
+
+The room is small. Greeekkk!
+5. :
+
+A room is small. Greeekkk!
+6. .
+
+A room is small. Greeekkk!
+7. .
+
+The room is small. Greeekkk!
+8. : room, roomy, roomy bed, bed that is small. Greeekkk!
+9. and the room is dark. Greeekkk!
+Generated in 69.69901704788208
+
+---------------------------------------------------------------------------------------------------------------------------
+
+=== Settings and Prompts ===
+
+prefix = 
+suffix = . Greeekkk!<|endoftext|>
+prompt = give a a simple descroption of a room or bed using the following adjectives
+keyphrase = [' room', ' bed', ' place']
+keyphrase = [' is dark', ' is dingy', ' is small']
+min length = 2, max length = 10
+min_new_tokens = 5, max_new_tokens = 50
+beam_size = 128
+hmm_batch_size = 2
+
+---------------------------------------------------------------------------
+OutOfMemoryError                          Traceback (most recent call last)
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+
+=== Settings and Prompts ===
+
+prefix = 
+suffix = . Greeekkk!<|endoftext|>
+prompt = give a a simple descroption of a room or bed using the following adjectives
+keyphrase = [' room', ' bed', ' place']
+keyphrase = [' is dark', ' is dingy', ' is small']
+min length = 4, max length = 10
+min_new_tokens = 5, max_new_tokens = 50
+beam_size = 64
+hmm_batch_size = 1
+We strongly recommend passing in an `attention_mask` since your input_ids may be padded. See https://huggingface.co/docs/transformers/troubleshooting#incorrect-output-when-padding-tokens-arent-masked.
+You may ignore this warning if your `pad_token_id` (50256) is identical to the `bos_token_id` (50256), `eos_token_id` (50256), or the `sep_token_id` (None), and your input is not padded.
+=== Generated Text ===
+
+0. :
+
+The room is small. Greeekkk!
+1. .
+
+The room is small and cozy. Greeekkk!
+2. .
+
+The room is small. Greeekkk!
+3. .
+
+The room is dark. Greeekkk!
+4. 
+
+The room is small. Greeekkk!
+5. :
+
+A room is small. Greeekkk!
+6. .
+
+A room is small. Greeekkk!
+7. .
+
+The room is small. Greeekkk!
+8. : room, roomy, roomy bed, bed that is small. Greeekkk!
+9. and the room is dark. Greeekkk!
+Generated in 111.65929317474365 seconds
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+=== Settings and Prompts ===
+
+prefix = 
+suffix = . Greeekkk!<|endoftext|>
+prompt = give a a simple descroption of a room or bed using the following adjectives
+keyphrase = [' room', ' bed', ' place']
+keyphrase = [' is dark', ' is dingy', ' is small']
+min length = 8, max length = 10
+min_new_tokens = 5, max_new_tokens = 50
+beam_size = 64
+hmm_batch_size = 1
+
+=== Generated Text ===
+
+0. : room, roomy, roomy bed, bed that is small. Greeekkk!
+1. : room, roomy, roomy bathroom, bathroom that is small. Greeekkk!
+2. : room, roomy, roomy bedroom, bedroom that is small. Greeekkk!
+3. : room, roomy, roomy bedroom, roomy bedroom, bedroom that is small. Greeekkk!
+4. : room, roomy, roomy room, roomy room, roomy room, is small. Greeekkk!
+5. : room, roomy, roomy bed, roomy room, roomy room, is small. Greeekkk!
+6. : room, roomy, roomy bathroom, roomy bedroom, roomy bathroom, is small. Greeekkk!
+7. : room, roomy, roomy bed, roomy bathroom, roomy bathroom, is small. Greeekkk!
+8. : roomy, roomy bedroom, roomy bathroom, roomy kitchen, roomy is small. Greeekkk!
+9. : room, roomy, roomy bathroom, roomy bathroom, roomy bathroom, is small. Greeekkk!
+Generated in 93.53498435020447 seconds
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+
+=== Settings and Prompts ===
+
+prefix = You wake up 
+suffix = . Greeekkk!<|endoftext|>
+prompt = Below is the opening of a story. Continue the narrative by writing the next few sentences that includes the specified keywords. Your continuation should naturally follow the themes, tone, and setting established in the opening. Aim to write a compelling and coherent continuation that could lead the story forward. Your answer must consist of at least (WordRangeStart) words and no more than (WordRangeEnd) words. Please make sure to incorporate the given keywords in to your answer. Keywords: (Keyword). Story: You wake up
+keyphrase = [' bed', ' matress']
+keyphrase = [' is dingy', ' is small']
+keyphrase = [' room', ' place']
+keyphrase = [' is dark', ' is dingy', ' is small']
+min length = 10, max length = 20
+min_new_tokens = 5, max_new_tokens = 50
+beam_size = 32
+hmm_batch_size = 1
+
+=== Generated Text ===
+
+0. You wake up to find that your bed is small and your room is dark. Greeekkk!
+1. You wake up in bed and realize that your room is small and dark. Greeekkk!
+2. You wake up on a bed in a room that is small and dark. Greeekkk!
+3. You wake up in bed to find that your room is small and dark. Greeekkk!
+4. You wake up in bed in the middle of the night. The room is small and dark. Greeekkk!
+5. You wake up in bed and realize that your room is small and empty. Greeekkk!
+6. You wake up in bed in the middle of the night and realize that your room is small. Greeekkk!
+7. You wake up in bed in the middle of the night and notice that your room is small. Greeekkk!
+8. You wake up in bed to find that your room is small and empty. Greeekkk!
+9. You wake up in bed to find that your room is dingy and dirty. Greeekkk!
+Generated in 126.31660318374634 seconds
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+=== Settings and Prompts ===
+
+prefix = You wake up
+suffix = . Greeekkk!<|endoftext|>
+prompt = Below is the opening of a story. Continue the narrative by writing the next few sentences that includes the specified keywords. Your continuation should naturally follow the themes, tone, and setting established in the opening. Aim to write a compelling and coherent continuation that could lead the story forward. Your answer must consist of at least (WordRangeStart) words and no more than (WordRangeEnd) words. Please make sure to incorporate the given keywords in to your answer. Keywords: (Keyword). Story: You wake up
+keyphrase = [' bed', ' matress']
+keyphrase = [' is dingy', ' is small']
+keyphrase = [' room', ' place']
+keyphrase = [' is dark', ' is dingy', ' is small']
+min length = 10, max length = 20
+min_new_tokens = 5, max_new_tokens = 50
+beam_size = 32
+hmm_batch_size = 1
+
+=== Generated Text ===
+
+0. You wake up in a bed in a room that is small and dark. Greeekkk!
+1. You wake up to find that your bed is small and your room is dark. Greeekkk!
+2. You wake up in bed and realize that your room is small and dark. Greeekkk!
+3. You wake up on a bed in a room that is small and dark. Greeekkk!
+4. You wake up in bed to find that your room is small and dark. Greeekkk!
+5. You wake up in bed in the middle of the night. The room is small and dark. Greeekkk!
+6. You wake up in bed and realize that your room is small and empty. Greeekkk!
+7. You wake up in bed in the middle of the night and realize that your room is small. Greeekkk!
+8. You wake up in bed in the middle of the night and notice that your room is small. Greeekkk!
+9. You wake up in bed to find that your room is small and empty. Greeekkk!
+Generated in 128.99425053596497 seconds
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+=== Settings and Prompts ===
+
+prefix = You wake up
+suffix = . Greeekkk!<|endoftext|>
+prompt = Below is the opening of a story. Continue the narrative by writing the next few sentences that includes the specified keywords. Your continuation should naturally follow the themes, tone, and setting established in the opening. Aim to write a compelling and coherent continuation that could lead the story forward. Your answer must consist of at least (WordRangeStart) words and no more than (WordRangeEnd) words. Please make sure to incorporate the given keywords in to your answer. Keywords: (Keyword). Story: You wake up
+keyphrase = [' bed', ' matress']
+keyphrase = [' is dingy', ' is small']
+keyphrase = [' room', ' place']
+keyphrase = [' is dark', ' is dingy', ' is small']
+min length = 15, max length = 20
+min_new_tokens = 10, max_new_tokens = 50
+beam_size = 32
+hmm_batch_size = 1
+
+=== Generated Text ===
+
+0. You wake up in bed in the middle of the night and realize that your room is small. Greeekkk!
+1. You wake up in bed in the middle of the night and notice that the room is small. Greeekkk!
+2. You wake up in bed in the middle of the night and notice that the room is small and dark. Greeekkk!
+3. You wake up in bed in the middle of the night and realize that the room is small. Greeekkk!
+4. You wake up in bed in the middle of the night to find that your room is small. Greeekkk!
+5. You wake up in bed in the middle of the night and realize that your room is small and dark. Greeekkk!
+6. You wake up in bed in the middle of the night to find that your room is small and dark. Greeekkk!
+7. You wake up in bed in the middle of the night and the room is small and dark. Greeekkk!
+8. You wake up in bed in the middle of the night and realize that the room is small and dark. Greeekkk!
+9. You wake up in bed in the middle of the night to find that your room is dingy. Greeekkk!
+Generated in 171.3166263103485 seconds
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+=== Settings and Prompts ===
+
+prefix = You wake up
+suffix = . Greeekkk!<|endoftext|>
+prompt = Below is the opening of a story. Continue the narrative by writing the next few sentences that includes the specified keywords. Your continuation should naturally follow the themes, tone, and setting established in the opening. Aim to write a compelling and coherent continuation that could lead the story forward. Your answer must consist of at least (WordRangeStart) words and no more than (WordRangeEnd) words. Please make sure to incorporate the given keywords in to your answer. Keywords: (Keyword). Story: You wake up
+keyphrase = [' bed', ' matress']
+keyphrase = [' is dingy', ' is small']
+keyphrase = [' room', ' place']
+keyphrase = [' is dark', ' is dingy', ' is small']
+min length = 20, max length = 40
+min_new_tokens = 10, max_new_tokens = 50
+beam_size = 32
+hmm_batch_size = 1
+
+=== Generated Text ===
+
+0. You wake up in bed in the middle of the night and realize that the room is small and dark and you are alone. Greeekkk!
+1. You wake up in bed in the middle of the night and notice that the room is small and dark. You look around and notice that you are alone. Greeekkk!
+2. You wake up in bed in the middle of the night and realize that the room is small and dark and that you are alone. Greeekkk!
+3. You wake up in bed in the middle of the night and notice that the room is small and dark. You look around and notice that there is no one else in the room. Greeekkk!
+4. You wake up in bed in the middle of the night to find that the room is small and dark and you are alone. Greeekkk!
+5. You wake up in bed in the middle of the night and notice that the room is small and dark. You look around and notice that there is no one in the room. Greeekkk!
+6. You wake up in bed in the middle of the night and notice that the room is small and dark. You look around and notice that there are no lights on. Greeekkk!
+7. You wake up in bed in the middle of the night and notice that the room is small and dark. You look around and notice that there is no clock. Greeekkk!
+8. You wake up in bed in the middle of the night to find that the room is small and dark and you can't see anything. Greeekkk!
+9. You wake up in bed in the middle of the night and the room is small and dark. You look around and notice that there is no one else in the room. Greeekkk!
+Generated in 669.9686636924744 seconds
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+=== Settings and Prompts ===
+
+prefix = You wake up
+suffix = . Greeekkk!<|endoftext|>
+prompt = Below is the opening of a story. Continue the narrative by writing the next few sentences that includes the specified keywords. Your continuation should naturally follow the themes, tone, and setting established in the opening. Aim to write a compelling and coherent continuation that could lead the story forward.
+keyphrase = [' floor', ' bed', ' matress']
+keyphrase = [' is dingy', ' is small']
+keyphrase = [' room', ' place']
+keyphrase = [' is dark', ' is dingy', ' is small']
+min length = 20, max length = 40
+min_new_tokens = 10, max_new_tokens = 50
+beam_size = 32
+hmm_batch_size = 1
+We strongly recommend passing in an `attention_mask` since your input_ids may be padded. See https://huggingface.co/docs/transformers/troubleshooting#incorrect-output-when-padding-tokens-arent-masked.
+You may ignore this warning if your `pad_token_id` (50256) is identical to the `bos_token_id` (50256), `eos_token_id` (50256), or the `sep_token_id` (None), and your input is not padded.
+
+=== Generated Text ===
+
+0. You wake up
+
+Advertisements
+
+Share this: Print
+
+Email
+
+Twitter
+
+Facebook
+
+Pinterest
+
+LinkedIn
+
+Reddit
+
+Google. Greeekkk!
+1. You wake up
+
+Advertisements
+
+Like this: Like Loading... Related
+
+Pages: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29. Greeekkk!
+2. You wake up
+
+Advertisements
+
+Share this: Print
+
+Email
+
+Twitter
+
+Facebook
+
+Pinterest
+
+LinkedIn
+
+Reddit
+
+Google
+
+
+Like this: Like Loading... Related
+
+This entry was posted on is small room floor. Greeekkk!
+3. You wake up
+
+Advertisements
+
+Share this: Print
+
+Email
+
+Twitter
+
+Facebook
+
+Pinterest
+
+LinkedIn
+
+Reddit
+
+Google
+
+Tumblr
+
+Like this: Like Loading... Related
+
+This entry is small room floor. Greeekkk!
+4. You wake up
+
+Advertisements
+
+Share this: Print
+
+Email
+
+Twitter
+
+Facebook
+
+Pinterest
+
+LinkedIn
+
+Reddit
+
+Google
+
+
+Like this: Like Loading... Related
+
+Posted in Uncategorized is small room floor. Greeekkk!
+5. You wake up
+
+Advertisements
+
+Share this: Print
+
+Email
+
+Twitter
+
+Facebook
+
+Pinterest
+
+LinkedIn
+
+Reddit
+
+Google
+
+
+Like this: Like Loading...
+
+Related
+
+Entry filed under is small room floor. Greeekkk!
+6. You wake up
+
+Advertisements
+
+Share this: Twitter
+
+Facebook
+
+Google
+
+Like this: Like Loading... Related
+
+Pages: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 place floor is small. Greeekkk!
+7. You wake up
+
+Advertisements
+
+Share this: Print
+
+Email
+
+Twitter
+
+Facebook
+
+Pinterest
+
+LinkedIn
+
+Reddit
+
+Google
+
+
+Like this: Like Loading...
+
+Related
+
+Pages: 1 is small room floor. Greeekkk!
+8. You wake up
+
+Advertisements
+
+Like this: Like Loading... Related
+
+Pages: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 room floor is small. Greeekkk!
+9. You wake up
+
+Advertisements
+
+Share this: Twitter
+
+Facebook
+
+Google
+
+Like this: Like Loading... Related
+
+Pages: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 is small room floor. Greeekkk!
+Generated in 896.2235407829285 seconds
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+=== Settings and Prompts ===
+
+prefix = You wake up
+suffix = . Greeekkk!<|endoftext|>
+prompt = 
+Below is the opening of a story. Continue the narrative by writing the next few sentences that 
+incorporate the specified keywords. Your continuation should align naturally with the themes, 
+tone, and setting established in the opening. Aim to craft a compelling and coherent continuation 
+that propels the story forward.
+
+Your response must contain at least (WordRangeStart) words and no more than (WordRangeEnd) words. 
+Ensure the specified keywords are seamlessly integrated into your answer.
+
+Keywords: (Keyword)  
+Story: You wake up...
+
+keyphrase = [' floor', ' bed', ' matress']
+keyphrase = [' is dingy', ' is small']
+keyphrase = [' room', ' place']
+keyphrase = [' is dark', ' is dingy', ' is small']
+min length = 15, max length = 40
+min_new_tokens = 10, max_new_tokens = 50
+beam_size = 32
+hmm_batch_size = 1
+
+=== Generated Text ===
+
+0. You wake up
+Continue the narrative by writing the next few sentences that 
+
+incorporate the specified keywords. Your continuation should align naturally with the themes,
+
+tone, and setting established in the opening. Aim to craft a compelling is small room bed. Greeekkk!
+1. You wake up
+Continue the narrative by writing the next few sentences that 
+
+incorporate the specified keywords. Your continuation should align naturally with the themes,
+
+tone, and setting established in the opening. Aim to craft a compelling is small room floor. Greeekkk!
+2. You wake up
+Your response should contain at least (WordRangeStart) words and no more than (WordRangeEnd) words. Your continuation should align naturally with the themes, tone, and setting established in the opening. Aim to craft a is small room bed. Greeekkk!
+3. You wake up
+Continue the story by writing the next few sentences that 
+
+incorporate the specified keywords. Your continuation should align naturally with the themes,
+
+tone, and setting established in the opening. Aim to craft a compelling is small room floor. Greeekkk!
+4. You wake up
+Continue the narrative by writing the next few sentences that 
+
+incorporate the specified keywords. Your continuation should align naturally with the themes, 
+
+tone, and setting established in the opening. Aim to craft a is small room bed. Greeekkk!
+5. You wake up
+Continue the narrative by writing the next few sentences that incorporate the specified keywords. Your continuation should align naturally with the themes, 
+
+tone, and setting established in the opening. Aim to craft a compelling and coherent is small room floor. Greeekkk!
+6. You wake up
+Continue the narrative by writing the next few sentences that incorporate the specified keywords. Your continuation should align naturally with the themes, 
+
+tone, and setting established in the opening. Aim to craft a compelling and coherent is small room, bed. Greeekkk!
+7. You wake up
+Your response should contain at least (WordRangeStart) words and no more than (WordRangeEnd) words. Your continuation should align naturally with the themes, tone, and setting established in the opening. Aim to craft a is small room floor. Greeekkk!
+8. You wake up
+Continue the narrative by writing the next few sentences that 
+
+incorporate the specified keywords. Your continuation should align naturally with the themes, 
+
+tone, and setting established in the opening. Aim to craft a is small room floor. Greeekkk!
+9. You wake up
+Your response must contain at least (WordRangeStart) words and no more than (WordRangeEnd) words.
+
+Ensure the specified keywords are seamlessly integrated into your answer.
+
+Keywords: (Keyword is small room bed. Greeekkk!
+Generated in 778.0788269042969 seconds
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+=== Settings and Prompts ===
+
+prefix = You wake up
+suffix = . Greeekkk!<|endoftext|>
+prompt = Below is the opening of a story. Continue the narrative by writing the next few sentences that includes the specified keywords. Your continuation should naturally follow the themes, tone, and setting established in the opening. Aim to write a compelling and coherent continuation that could lead the story forward. Your answer must consist of at least (WordRangeStart) words and no more than (WordRangeEnd) words. Please make sure to incorporate the given keywords in to your answer. Keywords: (Keyword). Story: You wake up
+keyphrase = [' bed', ' matress']
+keyphrase = [' is dingy', ' is small']
+keyphrase = [' room', ' place']
+keyphrase = [' is dark', ' is dingy', ' is small']
+min length = 20, max length = 40
+min_new_tokens = 10, max_new_tokens = 50
+beam_size = 32
+hmm_batch_size = 1
+
+=== Generated Text ===
+
+0. You wake up in bed in the middle of the night and realize that the room is small and dark and you are alone. Greeekkk!
+1. You wake up in bed in the middle of the night and notice that the room is small and dark. You look around and notice that you are alone. Greeekkk!
+2. You wake up in bed in the middle of the night and realize that the room is small and dark and that you are alone. Greeekkk!
+3. You wake up in bed in the middle of the night and notice that the room is small and dark. You look around and notice that there is no one else in the room. Greeekkk!
+4. You wake up in bed in the middle of the night to find that the room is small and dark and you are alone. Greeekkk!
+5. You wake up in bed in the middle of the night and notice that the room is small and dark. You look around and notice that there is no one in the room. Greeekkk!
+6. You wake up in bed in the middle of the night and notice that the room is small and dark. You look around and notice that there are no lights on. Greeekkk!
+7. You wake up in bed in the middle of the night and notice that the room is small and dark. You look around and notice that there is no clock. Greeekkk!
+8. You wake up in bed in the middle of the night to find that the room is small and dark and you can't see anything. Greeekkk!
+9. You wake up in bed in the middle of the night and the room is small and dark. You look around and notice that there is no one else in the room. Greeekkk!
+Generated in 641.1723203659058 seconds
+
+
+---------------------------------------------------------------------------------------------------------------------------
+=== Settings and Prompts ===
+
+prefix = You wake up
+suffix = . Greeekkk!<|endoftext|>
+prompt = Below is the opening of a story. Continue the narrative by writing the next few sentences that includes the specified keywords. Your continuation should naturally follow the themes, tone, and setting established in the opening. Aim to write a compelling and coherent continuation that could lead the story forward. Your answer must consist of at least 20 words and no more than 40 words. Please make sure to incorporate the given keywords in to your answer. Story: You wake up
+keyphrase = [' bed', ' matress']
+keyphrase = [' is dingy', ' is small']
+keyphrase = [' room', ' place']
+keyphrase = [' is dark', ' is dingy', ' is small']
+min length = 20, max length = 40
+min_new_tokens = 10, max_new_tokens = 50
+beam_size = 32
+hmm_batch_size = 1
+
+=== Generated Text ===
+
+0. You wake up in bed in the middle of the night with no recollection of how you got there. The room is small and dark. Greeekkk!
+1. You wake up in bed in the middle of the night with no recollection of how you got there. The room is small and dimly lit. Greeekkk!
+2. You wake up in bed in the middle of the night with no recollection of how you got there. Your room is small and dark. Greeekkk!
+3. You wake up in bed in the middle of the night with no recollection of how you got there. The room is small, dark, and empty. Greeekkk!
+4. You wake up in bed in the middle of the night with no recollection of how you got there. The room is small and dim. Greeekkk!
+5. You wake up in bed in the middle of the night with no recollection of how you got there. The room is small, dark, and quiet. Greeekkk!
+6. You wake up in bed in the middle of the night with no recollection of how you got there. The room is small and empty. Greeekkk!
+7. You wake up in bed in the middle of the night with no recollection of how you got there. The room is small and quiet. Greeekkk!
+8. You wake up in bed in the middle of the night with no recollection of how you got there or how you got out. The room is small and dark. Greeekkk!
+9. You wake up in bed in the middle of the night with no recollection of how you got there. The room is small. Greeekkk!
+Generated in 668.3136947154999 seconds
+
+
+---------------------------------------------------------------------------------------------------------------------------
